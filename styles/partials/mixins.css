@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/Font/Raleway-Bold.ttf") format("truetype");
+  font-style: "bold";
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/Font/Raleway-Light.ttf") format("truetype");
+  font-style: "light";
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("/assets/Font/Raleway-Italic.ttf") format("truetype");
+  font-style: "italic";
+}/*# sourceMappingURL=mixins.css.map */

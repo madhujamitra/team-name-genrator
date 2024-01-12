@@ -1,19 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script src="./scripts/index.js" defer></script>
-    
     <title>Document</title>
 </head>
-<header>
-<nav>Random Name Generator</nav>
-</header>
+
+
+
+<nav class="header">
+    <h1>Random Team Name Generator</h1>
+    <img class="header__image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.freepnglogos.com%2Fuploads%2Fdivider-png%2Fdivider-orthella-bardon-page-eternal-city-10.png&f=1&nofb=1&ipt=bc62dd894850b12e2db702b11aee8b6eb3944211844d0571615c758ea2a9e2d5&ipo=images">
+    <h2 class="header--subheader"> Need a team name but not sure where to start? </h2>
+    <h2 class="header--subheader">Let our generator make one for you!</h2>
+</nav>
+
+
 <body>
-    
+    <section class="card__parent">
+        <!-- card -->
+        <div class="card__container">
+            <h2 class="card__header">Let's Generate!</h2>
+
+            <section class="card__input">
+                <!-- input form -->
+                <form class="card__input" id="inputForm">
+                    <h3>Step 1: Write ANY word in the box below</h3> 
+                    <div class="card__input--form" >
+                    <label class="card__input--label" for="startName">Reference Word:</label>
+                    <input class="card__input--box" type="text" id="startName" placeholder="Reference word (ex.car)">
+                    </div>
+
+                    <h3>Step 2: Write an adjective of your choice!</h3> 
+                    <div class="card__input--form">
+                    <label class="card__input--label" for="adjectiveName">Adjective Word:</label>
+                    <input class="card__input--box" type="text" id="adjectiveName" placeholder="Adjective word (ex.big)">
+                </div>
+                <!-- <div> -->
+                <h3>Step 3: Hit submit and generate a teamname!</h3> 
+                <button class="card__button" type="submit">Submit</button>
+                <!-- </div> -->
+            </form>
+            </section>
+            <section class="card__output">
+                <h2  class="card__subheader">Your Team Names Are:</h2>
+                <ul class="output__box card__output--generated">     
+                </ul>
+            </section>
+        </div>
+        <div class="secret" >
+            <img class="secret__dog" id="train" src="https://media.tenor.co/images/c5a9ccf9f830b829e99e49dee0e562a0/raw"> 
+        </div>
+    </section>
 
 
+  <script>
+    train.onclick = function() {
+      let start = Date.now();
+
+    let initialLeft = 1400; // Adjust this value as needed
+  train.style.left = initialLeft + 'px';
+
+  let timer = setInterval(function() {
+    let timePassed = Date.now() - start;
+
+    // Calculate new position
+    let newLeft = initialLeft - timePassed / 5;
+
+    // Update position
+    train.style.left = newLeft + 'px';
+
+    // Stop the animation after a certain time or if the position goes too far left
+    if (timePassed > 8000 || newLeft < 0) clearInterval(timer);
+
+  }, 10);
+    }
+  </script>
 </body>
+
 </html>

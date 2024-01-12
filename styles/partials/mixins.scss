@@ -3,16 +3,37 @@ $siteBlack:#0d1b2a;
 $siteBlueBlack:#1B263B; 
 $siteMidBlue: #415A77; 
 $siteLightBlue: #778DA9; 
-$siteWhite:#E0E1DD; 
+$siteWhite:#F8F8F8; 
+$siteDarkWhite:#E0E0E0; 
 $siteYellow:#fbdd9b; 
 
-// 
+// breakpoints
+$mobileBreakpoint: 700px; 
+//general Mixins
 
 @mixin gradientBg { 
 background: rgb(13,27,42);
 background: linear-gradient(18deg, rgba(13,27,42,1) 0%, rgba(27,38,59,1) 35%, rgba(65,90,119,1) 100%);
 }
 
-
+@font-face {
+    font-family: "Raleway";
+    src: url("") format("truetype");
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("/assets/Font/Raleway-Bold.ttf") format("truetype");
+    font-style: "bold";
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("/assets/Font/Raleway-Light.ttf") format("truetype");
+    font-style: "light";
+  }
+  @font-face {
+    font-family: "Raleway";
+    src: url("/assets/Font/Raleway-Italic.ttf") format("truetype");
+    font-style: "italic";
+  }
 
 
